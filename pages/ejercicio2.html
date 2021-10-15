@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+      <header>
+          <h1>ORDEN DE <span>POLLO</span></h1>
+      </header>
+
+      <div class="container">
+        <a class="btn btn-primary" href="../index.html">Regresar</a>
+        <fieldset>
+            
+            <legend>Combos y productos</legend>
+
+            <label>Combos:</label><br>
+            
+                <span>
+                <input class="form-check-input" name="combo" id="superCombo" type="radio" checked>
+                <label for="superCombo">Super Combo</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" name="combo" id="comboPersonal" type="radio">
+                <label for="comboPersonal">Combo personal</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" name="combo" id="comboInfantil" type="radio">
+                <label for="comboInfantil">Combo infantil</label>
+                </span>
+
+            <br><label>Productos:</label><br>
+
+                <span>
+                <input class="form-check-input" id="ensalada" type="checkbox">
+                <label for="ensalada">Ensalada</label>
+                </span>
+                
+                <span>
+                <input class="form-check-input" id="papas" type="checkbox">
+                <label for="papas">Papas fritas</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="polloGrande" type="checkbox">
+                <label for="polloGrande">Pieza de pollo grande</label>
+                </span>
+
+                <span>
+                <input  class="form-check-input" id="polloMediano" type="checkbox">
+                <label for="polloMediano">Pieza de pollo mediana</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="polloPequeno" type="checkbox">
+                <label for="polloPequeno">Pieza de pollo pequeña</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="bebidaGrande" type="checkbox">
+                <label for="bebidaGrande">Bebida grande</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="bebidaMediana" type="checkbox">
+                <label for="bebidaMediana">Bebida Mediana</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="bebidaPequena" type="checkbox">
+                <label for="bebidaPequena">Bebida pequeña</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="cafe" type="checkbox">
+                <label for="cafe">Café</label>
+                </span>
+
+                <span>
+                <input class="form-check-input" id="postre" type="checkbox">
+                <label for="postre">Postre</label>
+                </span><br>
+
+                <label>Sugerencias:</label><br><br>
+
+                <div id="sugerenciasDiv" class="sugerenciasDiv"></div>
+
+                <textarea id="sugerenciasText" class="sugerenciasText form-control"></textarea><br>
+
+            <label>Total: $</label><input disabled id="total" step="0.01" value="7.25" type="number"><br><br>
+
+            <button id="enviar" class="btn btn-primary">Enviar</button>
+
+        </fieldset>
+
+        <div id="precioFinal" class="precioFinal">Total final: $0</div>
+
+        <div class="row resultado" id="resultado"></div>
+
+      </div>
+    <script src="../js/shortcut.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/scripts2.js"></script>
+  </body>
+</html>
